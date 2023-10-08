@@ -196,7 +196,7 @@ Desktop
         row-gap: 48px;
     }
 
-    .portfolio-cardt {
+    .portfolio-card {
         width: calc((100% - 48px) / 3);
     }
 
