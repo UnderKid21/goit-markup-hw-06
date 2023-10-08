@@ -51,6 +51,7 @@ img{
 /* Navigation */
 .header{
     background-color: var(--c-primary-light);
+    border-bottom: 1px solid #E7E9FC;
     box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
 }
 
@@ -58,7 +59,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #E7E9FC;
+    gap: 24px;
 
 }
 
@@ -78,8 +79,7 @@ img{
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-top: 24px;
-    padding-bottom: 24px;
+   padding: 17.5px,0;
     margin-right: 76px;
 
 }
@@ -111,18 +111,25 @@ img{
 .nav-link-first{
     position: relative;
     color: #404bbf; 
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
 }
+
 .nav-link-first::after{
      content: '';
-  display: block;
+  /* display: block; */
   width: 100%;
   position: absolute;
   left: 0;
   bottom: -1px;
+  width:48px;
   height: 4px;
   background-color: #404BBF;
   border-radius: 2px;
-  position: absolute;
+
 }
 
 .nav-link:hover,
@@ -144,7 +151,15 @@ img{
 .contact:hover, .contact:focus{
     color: #404bbf;
 }
-
+.button-mobile-menu{
+    min-height: 24px;
+    min-width: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
 
 
 /* Hero */
@@ -152,24 +167,32 @@ img{
 
 .hero-section{
     background-color:var(--c-brand);
-    padding: 188px 0;
-    max-width: 1440px; 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    padding: 72px 0;
+    max-width: 320px; 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-section/hero-bg-mobile.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    background-size: cover; 
     margin: 0 auto;
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    height: 432px;
 
 }
 .hero-title{
 color: var(--c-background-light);
-font-size: 56px;
+font-size: 36px;
 font-weight: 700;
-line-height: 1.07; 
-letter-spacing: 1.12px;
+line-height: 1.11; 
+letter-spacing: 0.02em;
+max-width: 496px;
+margin: 0 auto;
 text-align: center;
 margin: 0 auto ;
-max-width: 496px;
+margin-bottom: 48px;
+display: flex;
+justify-content: center;
 }
 .button{
     color: var(--c-primary-light);
@@ -186,7 +209,6 @@ border: none;
 border-radius: 4px;
 padding: 16px 32px;
 margin: 0 auto;
-margin-top: 48px;
 transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover, .button:focus{
@@ -196,7 +218,7 @@ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 /* Features */
 .features-section{
-    padding: 120px 0 120px 0;
+    padding: 96px 0 ;
 }
 .visually-hidden {
     position: absolute;
@@ -213,9 +235,10 @@ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .features-list{
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
 }
-.features-box{
+/* .features-box{
     flex-basis: calc((100% - 72px) / 4)
 }
 .icon-container{
@@ -230,14 +253,14 @@ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .features-icon{
     flex-shrink: 0;
-}
+} */
 .features-title{
     color: var(--c-brand);
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2;
-letter-spacing: 0.02em;
-margin-bottom: 8px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .features-text{
     color: var(--c-primary);
@@ -251,7 +274,7 @@ letter-spacing: 0.02em;
 
 .team-section{
     background-color: #F4F4FD;
-    padding: 120px 0 ;
+    padding: 96px 0 ;
 }
 .title-team{
     color: var(--c-brand);
@@ -265,12 +288,15 @@ margin-bottom: 72px;
 }
 .team-list{
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
     justify-content: center;
 }
+
 .team-card{
     background-color:var(--c-primary-light);
-    flex-basis: calc((100% - 72px)/ 4);
+    /* flex-basis: calc((100% - 72px)/ 4); */
+    text-align: center;
     border-radius: 0px 0px 4px 4px;
     box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
@@ -327,7 +353,7 @@ margin-bottom: 8px;
 }
 /* Portfolio */
 .portfolio-section{
-    padding: 120px 0 120px 0;
+    padding: 96px 0x 
 }
 .title-portfolio{
     color: var(--c-brand);
@@ -342,7 +368,6 @@ margin-bottom: 72px;
 .portfolio-list{
     display: flex;
 flex-wrap: wrap;
-column-gap: 24px; 
 row-gap: 48px;
 }
 
@@ -351,13 +376,12 @@ row-gap: 48px;
 }
 
 .portfolio-card{
-    width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-card:hover, .portfolio-card:focus{
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
     transform: translateY(0%);
 }
     
@@ -411,16 +435,18 @@ margin-bottom: 8px;
 /* Footer */
 .footer{
   background-color: var(--c-brand);
-  padding: 100px 0;
+  padding: 96px 0;
 }
 .footer-container{
     display: flex;
     align-items: baseline;  
+    gap: 72px;
+    flex-wrap: wrap;
 
 }
-.logo-container{
+/* .logo-container{
     margin-right: 120px;
-}
+} */
 .logo-footer{
     color: #4D5AE5;
 font-family: "Raleway", sans-serif;
@@ -435,7 +461,7 @@ display: inline-block
 }
 .accent-footer{
     color: #f4f4fd;
-    display: inline-block
+  
 }
 .footer-text{
     color: #F4F4FD;
@@ -452,11 +478,14 @@ display: inline-block
     letter-spacing: 0.02em;
     color: var(--c-primary-light);
     margin-bottom: 16px;
+    text-align: center
 }
 
 .social-media-list-footer{
     display: flex;
     gap: 16px;
+    justify-content: center;
+    
 }
 
 .footer-social-link{
@@ -483,9 +512,9 @@ display: inline-block
 .footer-icon{
     fill: #f4f4fd;}
 
-.footer-form-container{
+/* .footer-form-container{
 margin-left: 80px;
-}
+} */
 .footer-form-p{
     font-size: 16px;
 font-weight: 500;
@@ -496,11 +525,16 @@ margin-bottom: 16px;
 }
 .footer-form{
     display: flex;
-    gap:24px
+    gap:24px;
+    flex-wrap: wrap;
+}
+.footer-form-label{
+    display: flex;
+    gap: 16px;
 }
 
 .footer-input{
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     border-radius: 4px;
