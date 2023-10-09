@@ -113,11 +113,15 @@
         line-height: 1.16;
         letter-spacing: 0.04em;
     }
+    .social-media-conteiner{
+        display: block;
+    }
 
     .footer-container {
         padding-left: 92px;
     }
 }
+
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
     .hero-section{
@@ -208,7 +212,9 @@ Desktop
     .footer {
         padding: 100px 0;
     }
-
+    .social-media-conteiner{
+        display: block;
+    }
     .footer-input {
         width: 264px;
     }
