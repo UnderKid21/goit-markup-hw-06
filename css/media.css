@@ -31,7 +31,7 @@
 
 @media only screen and (min-resolution: 192dpi) {
     .hero-section{
-        background-image: linear-gradient rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7),
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/hero-section/hero-bg-tablet@2.jpg);
     }
 }
@@ -48,7 +48,7 @@
     .hero-section {
         max-width: 768px;
         padding: 112px 0;
-        background-image: linear-gradient rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7),
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/hero-section/hero-bg-tablet.jpg);
     }
 
@@ -121,8 +121,8 @@
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
     .hero-section{
-        background-image: linear-gradient rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7),
-            url(./images/hero-section/hero-bg-tablet@2.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-section/hero-bg-tablet@2.jpg);
     }
 }
 
@@ -159,8 +159,8 @@ Desktop
     .hero-section {
         max-width: 1440px;
         padding: 188px 0;
-        background-image: linear-gradient rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7),
-            url(./images/hero-section/hero-bg.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-section/hero-bg.jpg);
     }
 
     .features-list{
@@ -224,7 +224,7 @@ Desktop
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
     .hero-section {
-        background-image: linear-gradient rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7),
-            url(./images/hero-section/hero-bg@2.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-section/hero-bg@2.jpg);
     }
 }
