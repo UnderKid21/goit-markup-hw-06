@@ -50,6 +50,7 @@ img{
 
 /* Navigation */
 .header{
+    padding:16px 0;
     background-color: var(--c-primary-light);
     border-bottom: 1px solid #E7E9FC;
     box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
@@ -177,7 +178,6 @@ img{
     display: flex;
     gap: 48px;
     align-items: center;
-    height: 432px;
 
 }
 .hero-title{
@@ -353,7 +353,7 @@ margin-bottom: 8px;
 }
 /* Portfolio */
 .portfolio-section{
-    padding: 96px 0x 
+    padding: 96px 0;
 }
 .title-portfolio{
     color: var(--c-brand);

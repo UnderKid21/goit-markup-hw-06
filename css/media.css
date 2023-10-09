@@ -30,8 +30,8 @@
    
 
 @media only screen and (min-resolution: 192dpi) {
-    .hero-section {
-        background-image: linear-gradient rgba(46, 47, 66, 0.7),
+    .hero-section{
+        background-image: linear-gradient rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7),
             url(../images/hero-section/hero-bg-tablet@2.jpg);
     }
 }
@@ -42,11 +42,13 @@
     .container {
         width: 768px;
     }
-
+    .header{
+    padding: 0 0;
+    }
     .hero-section {
         max-width: 768px;
         padding: 112px 0;
-        background-image: linear-gradient rgba(46, 47, 66, 0.7),
+        background-image: linear-gradient rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7),
             url(../images/hero-section/hero-bg-tablet.jpg);
     }
 
@@ -118,9 +120,9 @@
 }
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
-    .hero-section {
-        background-image: linear-gradient rgba(46, 47, 66, 0.7),
-            url(../images/hero-section/hero-bg-tablet@2x.jpg);
+    .hero-section{
+        background-image: linear-gradient rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7),
+            url(./images/hero-section/hero-bg-tablet@2.jpg);
     }
 }
 
@@ -157,17 +159,20 @@ Desktop
     .hero-section {
         max-width: 1440px;
         padding: 188px 0;
-        background-image: linear-gradient rgba(46, 47, 66, 0.7),
-            url(../images/hero-section/hero-bg.jpg);
+        background-image: linear-gradient rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7),
+            url(./images/hero-section/hero-bg.jpg);
     }
 
     .features-list{
-        width: calc((100% - 72px) / 4);
+        flex-wrap: nowrap;
     }
-
+    .features-box{
+    width: calc((100% - 72px) / 4);
+    }
+    
     .icon-container {
-        background-color: var(--c-second);
-        border: 1px solid var(--c-light-slate);
+        background-color: #F4F4FD;
+        border: 1px solid #8E8F99;
         padding: 24px 100px;
         margin-bottom: 8px;
         height: 112px;
@@ -187,7 +192,7 @@ Desktop
         padding: 120px 0;
     }
 
-    /* Portfolio */
+ 
     .portfolio-section {
         padding: 120px 0;
     }
@@ -219,7 +224,7 @@ Desktop
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
     .hero-section {
-        background-image: linear-gradient rgba(46, 47, 66, 0.7),
-            url(../images/hero-section/hero-bg@2.jpg);
+        background-image: linear-gradient rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7),
+            url(./images/hero-section/hero-bg@2.jpg);
     }
 }
